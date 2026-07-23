@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACALED | Book Lending Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand">
+      <img src="book_container/book_logo.png" alt="ACALED Logo" class="logo">
+      <span class="name">ACALED</span>
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav-link">Login</a>
+      <a href="#" class="nav-btn borrow-btn">Borrow</a>
+      <a href="#" class="nav-btn buy-btn">Buy</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+    <div class="content">
+      <h1 class="title">WELCOME TO ACALED</h1>
+      <p class="subtitle">Book Lending Service — Browse, Borrow, and Enjoy Reading</p>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY CARDS ===== -->
+  <section class="categories">
+    <div class="card">
+      <h3>WHY US?</h3>
+      <p>We provide a simple and efficient book lending system. Borrow, Buy and Return books without hassle.</p>
+    </div>
+    <div class="card">
+      <h3>PURCHASE</h3>
+      <p>Every purchase earns you points to borrow or buy more books, helping us maintain and improve our service.</p>
+    </div>
+    <div class="card">
+      <h3>DEVELOPERS</h3>
+      <p>Frontend by Ronin XV and Backend by Natzui X, aiming for a smooth, minimalist, user-friendly experience.</p>
+    </div>
+  </section>
+
+  <section class="filters">
+    <button class="pill active" data-filter="all">All</button>
+    <button class="pill" data-filter="fiction">Fiction</button>
+    <button class="pill" data-filter="nonfiction">Non-Fiction</button>
+    <button class="pill" data-filter="history">History</button>
+    <button class="pill" data-filter="comics">Comics</button>
+  </section>
+
+  <main class="grid">
+
+    <!-- Fiction -->
+    <div class="book" data-category="fiction">
+      <img src="book_container/FC1.png" alt="Life of Tantan">
+      <div class="badge sale">Sale</div>
+      <div class="info">
+        <h3>Life of Tantan</h3>
+        <p class="author">by Author Natzui</p>
+        <span class="price">₱299.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="fiction">
+      <img src="book_container/Ely.jpg" alt="Elysian Destiny">
+      <div class="info">
+        <h3>Elysian Destiny</h3>
+        <p class="author">by Madison</p>
+        <span class="price">₱201.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="fiction">
+      <img src="book_container/CityD.jpg" alt="City Dreams">
+      <div class="badge low">Low Stock</div>
+      <div class="info">
+        <h3>City Dreams</h3>
+        <p class="author">by Merry Warren</p>
+        <span class="price">₱399.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="fiction">
+      <img src="book_container/Otspace.png" alt="The Outer Space">
+      <div class="info">
+        <h3>The Outer Space</h3>
+        <p class="author">by Leo Ramirez</p>
+        <span class="price">₱359.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="fiction">
+      <img src="book_container/Game.jpg" alt="The Game's King">
+      <div class="badge sale">Sale</div>
+      <div class="info">
+        <h3>The Game's King</h3>
+        <p class="author">by Matthew O. Bell</p>
+        <span class="price">₱349.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Non-Fiction -->
+    <div class="book" data-category="nonfiction">
+      <img src="book_container/person.jpg" alt="The Missing Person">
+      <div class="info">
+        <h3>The Missing Person</h3>
+        <p class="author">by Sarah Lokson</p>
+        <span class="price">₱249.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="nonfiction">
+      <img src="book_container/smile.jpg" alt="Be Your Own Reason To Smile">
+      <div class="info">
+        <h3>Be Your Own Reason To Smile</h3>
+        <p class="author">by Alexander Alonso</p>
+        <span class="price">₱250.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="nonfiction">
+      <img src="book_container/Truth.jpg" alt="Let The Truth Speaks">
+      <div class="badge low">Low Stock</div>
+      <div class="info">
+        <h3>Let The Truth Speaks</h3>
+        <p class="author">by Andrea Lulea</p>
+        <span class="price">₱299.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="nonfiction">
+      <img src="book_container/Modern.jpg" alt="Modern Furniture Design">
+      <div class="info">
+        <h3>Modern Furniture Design</h3>
+        <p class="author">by Loise Kennedy</p>
+        <span class="price">₱699.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="nonfiction">
+      <img src="book_container/Suc.jpg" alt="100 Rules of Success">
+      <div class="badge sale">Sale</div>
+      <div class="info">
+        <h3>100 Rules of Success</h3>
+        <p class="author">by Rusell Spencer</p>
+        <span class="price">₱399.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div class="book" data-category="history">
+      <img src="book_container/Philo.jpg" alt="History of Philosophy">
+      <div class="info">
+        <h3>History of Philosophy</h3>
+        <p class="author">by Francisco Watkinson</p>
+        <span class="price">₱494.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="history">
+      <img src="book_container/histox.jpg" alt="The Last Pharaoh">
+      <div class="badge low">Low Stock</div>
+      <div class="info">
+        <h3>The Last Pharaoh</h3>
+        <p class="author">by David Watson</p>
+        <span class="price">₱299.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="history">
+      <img src="book_container/Bible.jpg" alt="Holy Bible">
+      <div class="info">
+        <h3>Holy Bible</h3>
+        <p class="author">by King James</p>
+        <span class="price">₱100.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="history">
+      <img src="book_container/Noli.jpg" alt="Noli Me Tangere">
+      <div class="info">
+        <h3>Noli Me Tangere</h3>
+        <p class="author">by Jose Rizal</p>
+        <span class="price">₱350.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="history">
+      <img src="book_container/El.jpg" alt="El Filibusterismo">
+      <div class="badge sale">Sale</div>
+      <div class="info">
+        <h3>El Filibusterismo</h3>
+        <p class="author">by Jose Rizal</p>
+        <span class="price">₱499.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comics -->
+    <div class="book" data-category="comics">
+      <img src="book_container/Cap.jpg" alt="Captain America">
+      <div class="info">
+        <h3>Captain America</h3>
+        <p class="author">by Marvel</p>
+        <span class="price">₱599.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="comics">
+      <img src="book_container/robot.png" alt="Maniac Robot Attack">
+      <div class="badge low">Low Stock</div>
+      <div class="info">
+        <h3>Maniac Robot Attack</h3>
+        <p class="author">by SpaceWorks</p>
+        <span class="price">₱459.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="comics">
+      <img src="book_container/cmhilt.jpg" alt="Master Comics">
+      <div class="info">
+        <h3>Master Comics</h3>
+        <p class="author">by Ado Hent</p>
+        <span class="price">₱150.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="comics">
+      <img src="book_container/hulk.jpg" alt="Hulk">
+      <div class="badge sale">Sale</div>
+      <div class="info">
+        <h3>Hulk</h3>
+        <p class="author">by Marvel</p>
+        <span class="price">₱159.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="book" data-category="comics">
+      <img src="book_container/devfish.jpg" alt="Devil Fish">
+      <div class="info">
+        <h3>Devil Fish</h3>
+        <p class="author">by Digital Ink</p>
+        <span class="price">₱299.00</span>
+        <div class="actions">
+          <button class="btn borrow">Borrow</button>
+          <button class="btn buy">Buy</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="socials">
+      <a href="https://www.facebook.com/N.natzuish1/" target="_blank">Facebook</a>
+      <a href="https://github.com/Natzui" target="_blank">Github</a>
+      <a href="https://en.namu.wiki/w/DedSec" target="_blank">Dedsec</a>
+    </div>
+    <p>© 2026 ACALED | Natron IX</p>
+  </footer>
+
+  <script>
+    const pills = document.querySelectorAll(".pill");
+    const cards = document.querySelectorAll(".book");
+
+    pills.forEach(pill => {
+      pill.addEventListener("click", () => {
+        pills.forEach(p => p.classList.remove("active"));
+        pill.classList.add("active");
+
+        const filter = pill.dataset.filter;
+        cards.forEach(card => {
+          if (filter === "all" || card.dataset.category === filter) {
+            card.classList.remove("hide");
+            card.classList.add("show");
+          } else {
+            card.classList.add("hide");
+            card.classList.remove("show");
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
